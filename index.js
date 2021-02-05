@@ -40,7 +40,7 @@ botcc.on("message", async message => {
         chaneg()
     }
     if (message.content === "!!hangcho") {
-        if(message.author.id === "632538377052225537") return message.reply("m khong nen sai bot nay vi chinh m da la nguoi chui bot nay ngu. thanks condi")
+        if(message.author.id === "227281028396351488") return message.reply("m khong nen sai bot nay vi chinh m da la nguoi chui bot nay ngu. thanks condi")
         superagent.get("https://2b2t.io/api/queue?last=true").end((err, data) => {
             let bt = data.body[0][1];
             util.status('2y2c.org').then((response) => {
