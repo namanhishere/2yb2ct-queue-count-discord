@@ -55,6 +55,10 @@ botcc.on("message", async message => {
             })
         })
     }
+        if (message.content === "!!hangcho") {
+        if(message.author.id === "227281028396351488") return message.reply("m khong nen sai bot nay vi chinh m da la nguoi chui bot nay ngu. thanks condi")
+            message.reply("Xem tại: https://discord.com/channels/625715711481741322/625715711481741324/808710719531909129")
+    }
 })
 
 
