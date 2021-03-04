@@ -70,7 +70,7 @@ client.on("ready",() => {
                 mgs.delete()
             }, 1000);
         })
-    }, setting.timeout*1000);
+    }, 61*1000);
 });
 
 
