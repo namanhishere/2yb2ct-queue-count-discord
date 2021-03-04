@@ -62,6 +62,25 @@ botcc.on("message", async message => {
 })
 
 
+client.on('guildMemberAdd', beginner => {
+    const channel = beginner.guild.channels.get(625715711481741324);
+    var welcomeembed = new Discord.RichEmbed()
+    .setColor('#ff0000')
+        .addField("Chào Mừng Bạn Đã Vào Server", `${beginner}`)
+        .addField("IP server là", `2y2c.org`)
+            .addField("Tham khảo 1 số link download bằng cách dùng lệnh", `!!linh4k`)
+    channel.send(welcomeembed);
+
+  });
+
+  client.on('guildMemberRemove', member => {
+    const channel = member.guild.channels.get(625715711481741324);
+    var welcomeembed = new Discord.RichEmbed()
+    .setColor('#ff0000')
+        .addField("Tạm biệt bạn", ${member.user.username})
+        .addField("Hẹn Gặp Lại Bạn Vào Một Ngày Không Xa",":((((")
+    channel.send(welcomeembed);
+  });
 
 
 
