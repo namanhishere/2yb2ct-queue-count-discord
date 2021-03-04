@@ -62,7 +62,7 @@ botcc.on("message", async message => {
 })
 
 
-client.on('guildMemberAdd', beginner => {
+botcc.on('guildMemberAdd', beginner => {
     const channel = beginner.guild.channels.get("625715711481741324");
     var welcomeembed = new Discord.RichEmbed()
     .setColor('#ff0000')
@@ -73,7 +73,7 @@ client.on('guildMemberAdd', beginner => {
 
   });
 
-  client.on('guildMemberRemove', member => {
+  botcc.on('guildMemberRemove', member => {
     const channel = member.guild.channels.get("625715711481741324");
     var welcomeembed = new Discord.RichEmbed()
     .setColor('#ff0000')
