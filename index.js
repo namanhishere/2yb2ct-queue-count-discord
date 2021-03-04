@@ -77,7 +77,7 @@ client.on('guildMemberAdd', beginner => {
     const channel = member.guild.channels.get("625715711481741324");
     var welcomeembed = new Discord.RichEmbed()
     .setColor('#ff0000')
-        .addField("Tạm biệt bạn", ${member.user.username})
+        .addField("Tạm biệt bạn", member.user.username)
         .addField("Hẹn Gặp Lại Bạn Vào Một Ngày Không Xa",":((((")
     channel.send(welcomeembed);
   });
