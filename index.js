@@ -63,7 +63,7 @@ botcc.on("message", async message => {
 
 
 client.on('guildMemberAdd', beginner => {
-    const channel = beginner.guild.channels.get(625715711481741324);
+    const channel = beginner.guild.channels.get("625715711481741324");
     var welcomeembed = new Discord.RichEmbed()
     .setColor('#ff0000')
         .addField("Chào Mừng Bạn Đã Vào Server", `${beginner}`)
@@ -74,7 +74,7 @@ client.on('guildMemberAdd', beginner => {
   });
 
   client.on('guildMemberRemove', member => {
-    const channel = member.guild.channels.get(625715711481741324);
+    const channel = member.guild.channels.get("625715711481741324");
     var welcomeembed = new Discord.RichEmbed()
     .setColor('#ff0000')
         .addField("Tạm biệt bạn", ${member.user.username})
