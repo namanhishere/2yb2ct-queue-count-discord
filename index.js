@@ -69,7 +69,7 @@ botcc.on('guildMemberAdd', beginner => {
         .addField("Chào Mừng Bạn Đã Vào Server", `${beginner}`)
         .addField("IP server là", `2y2c.org`)
             .addField("Tham khảo 1 số link download bằng cách dùng lệnh", `!!linh4k`)
-    channel.send(welcomeembed);
+    channel.send(`Chào bạn ${member} đã vào trại tâm thần này, chúc bạn có 1 ngày học đc nhiều điều hay tính tốt, để có thể coi đc 1 số linh ngon nhất hiện tại, hãy sử dụng lệnh `+"```!!linh4k```");
 
   });
 
@@ -79,7 +79,7 @@ botcc.on('guildMemberAdd', beginner => {
     .setColor('#ff0000')
         .addField("Tạm biệt bạn", member.user.username)
         .addField("Hẹn Gặp Lại Bạn Vào Một Ngày Không Xa",":((((")
-    channel.send(welcomeembed);
+    channel.send(`Bye bye bạn ${member.user.username}`);
   });
 
 
