@@ -61,17 +61,7 @@ botcc.on("message", async message => {
     }
 })
 
-botcc.on("ready",() => {
-    console.log("Tool bắt đầu hoạt động")
-    setInterval(() => {
-        botcc.channels.get("748529588136837191").send("<@&769872414577917952>")
-        .then(mgs => {
-            setTimeout(() => {
-                mgs.delete()
-            }, 1000);
-        })
-    }, 61*1000);
-});
+
 
 
 
